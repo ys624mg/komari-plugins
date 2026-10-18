@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-10-18T13:34:06.047890Z",
+  "updated_at": "2026-10-18T14:47:35.174822Z",
   "plugins": [
     {
       "name": {
@@ -63,12 +63,12 @@
         "zh_CN": "支持多个 ACCK (acck.io) 账号自动登录并完成每日签到：逐个求解 altcha 工作量证明，用邮箱+密码+2FA(TOTP) 换取 Token，定时批量签到领取 AC 币；签到完成后统一推送一条「批量签到汇总」，不逐账号骚扰。另支持 AC 交易区监控：监控只负责发现新上架并推送——推送范围可选「全部新上架」或「仅命中规则的」，「推送规则」与「自动交易」两套规则各自独立；推送消息附带 TG 内联购买按钮，可开启二次确认防误点。「自动交易」按交易规则列表匹配后自动下单，账号、每轮上限与被墙过滤单独控制。敏感数据保护：密码与 TOTP 密钥不回显，邮箱一律脱敏展示。配置页改动（含开启交易所监控）即时生效，无需重启插件。\n\nv3.9.0：管理页全面重做（分页签 + KPI + 实时进度 + 购买弹窗）；修复「购买失败后无法重试」「签到记录被固定截断为 20 条」「手动签到并发未拦截」等问题；PoW 求解增加超时保护；状态文件改为原子写入并合并落盘；规则条件支持「价格」别名与全角数字。",
         "en": "Automatically sign in multiple ACCK (acck.io) accounts and check in daily: solves the altcha proof-of-work challenge per account, logs in with email+password+2FA (TOTP) to obtain a token, then calls the daily check-in endpoint. After each batch a single summary notification is sent (no per-account spam). Also monitors the AC exchange: monitoring only discovers new listings and pushes them, with a selectable push scope (all new listings, or rule-matched only). Push rules and trade rules are two independent lists: the push list decides what gets notified, the trade list decides what gets auto-bought (a line marked autoBuy=yes will auto-order). Telegram inline buy buttons are attached to push messages, with an optional two-step confirmation. Passwords and TOTP secrets are never echoed; emails are masked. Config changes (including enabling exchange monitoring) take effect immediately without a plugin restart.\n\nv3.9.0: redesigned admin page (tabs, KPI cards, live progress, buy dialog); fixed retry-after-failed-purchase, history truncation and concurrent manual check-in issues; added a timeout guard for PoW solving; atomic, batched state persistence; rule parser now accepts the 价格 alias and full-width digits."
       },
-      "version": "3.9.2",
+      "version": "3.9.5",
       "author": "Komari-User",
       "komari": ">=0.0.1",
       "url": "https://github.com/ys624mg/komari-plugins/releases/tag/acck-checkin-3.9.0",
-      "download": "https://github.com/ys624mg/komari-plugins/releases/download/acck-checkin-3.9.2/acck-checkin-3.9.2.zip",
-      "sha256": "b78b11ba85f8ca0e74a1c25dd7dcb3856b93a871596ca26241a30be22c0806b2"
+      "download": "https://github.com/ys624mg/komari-plugins/releases/download/acck-checkin-3.9.5/acck-checkin-3.9.5.zip",
+      "sha256": "d2a5988dcb38c559eb19f98cadb2a89774b7c993ed0d89ed17700163deb882e5"
     }
   ]
 }
