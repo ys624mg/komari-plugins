@@ -1,23 +1,40 @@
 {
   "schema": 1,
-  "updated_at": "2026-10-18T12:42:41.234Z",
+  "updated_at": "2026-10-18T13:34:06.047890Z",
   "plugins": [
     {
       "name": {
-        "zh_CN": "ACCK 自动签到",
-        "en": "ACCK Auto Check-in"
+        "zh_CN": "资源监控报警",
+        "en": "Resource Alert Monitor"
       },
-      "short": "acck-checkin",
+      "short": "resource-alert",
       "description": {
-        "zh_CN": "支持多个 ACCK (acck.io) 账号自动登录并完成每日签到：逐个求解 altcha 工作量证明，用邮箱+密码+2FA(TOTP) 换取 Token，定时批量签到领取 AC 币；签到完成后统一推送一条「批量签到汇总」，不逐账号骚扰。另支持 AC 交易区监控：监控只负责发现新上架并推送——推送范围可选「全部新上架」或「仅命中规则的」，「推送规则」与「自动交易」两套规则各自独立；推送消息附带 TG 内联购买按钮，可开启二次确认防误点。「自动交易」按交易规则列表匹配后自动下单，账号、每轮上限与被墙过滤单独控制。敏感数据保护：密码与 TOTP 密钥不回显，邮箱一律脱敏展示。配置页改动（含开启交易所监控）即时生效，无需重启插件。\n\nv3.9.0：管理页全面重做（分页签 + KPI + 实时进度 + 购买弹窗）；修复「购买失败后无法重试」「签到记录被固定截断为 20 条」「手动签到并发未拦截」等问题；PoW 求解增加超时保护；状态文件改为原子写入并合并落盘；规则条件支持「价格」别名与全角数字。",
-        "en": "Automatically sign in multiple ACCK (acck.io) accounts and check in daily: solves the altcha proof-of-work challenge per account, logs in with email+password+2FA (TOTP) to obtain a token, then calls the daily check-in endpoint. After each batch a single summary notification is sent (no per-account spam). Also monitors the AC exchange: monitoring only discovers new listings and pushes them, with a selectable push scope (all new listings, or rule-matched only). Push rules and trade rules are two independent lists: the push list decides what gets notified, the trade list decides what gets auto-bought (a line marked autoBuy=yes will auto-order). Telegram inline buy buttons are attached to push messages, with an optional two-step confirmation. Passwords and TOTP secrets are never echoed; emails are masked. Config changes (including enabling exchange monitoring) take effect immediately without a plugin restart.\n\nv3.9.0: redesigned admin page (tabs, KPI cards, live progress, buy dialog); fixed retry-after-failed-purchase, history truncation and concurrent manual check-in issues; added a timeout guard for PoW solving; atomic, batched state persistence; rule parser now accepts the 价格 alias and full-width digits."
+        "zh_CN": "定时检测所有节点 CPU 使用率、系统负载与连接数，超过阈值时通过 Komari 通知渠道或自定义 Webhook 报警，恢复后发送恢复消息。另支持「IP 被墙检测」：引用 Komari 自带延迟监测任务的 ping 数据，选中的任务持续超时达到设定时长即判定入站 IP 被封锁并通过站点自带通知渠道报警，恢复后自动通知。",
+        "en": "Periodically check CPU usage, system load and connection count of all nodes, alert via Komari notification or custom webhook when thresholds are exceeded, and send recovery messages after recovery. Also supports IP-block detection based on Komari built-in ping task metrics: when a selected latency-monitor task keeps timing out beyond the configured duration, the inbound IP is considered blocked and an alert is sent through the panel's built-in notification channel."
       },
-      "version": "3.9.0",
+      "version": "1.12.0",
       "author": "Komari-User",
       "komari": ">=0.0.1",
-      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/acck-checkin-3.9.0",
-      "download": "https://github.com/ys624mg/komari-plugins/releases/download/acck-checkin-3.9.0/acck-checkin-3.9.0.zip",
-      "sha256": "54b19ac0cb34109f9a649285a1b165c231d6545ca673e9f00bc3dd03b3c13b3c"
+      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/resource-alert-1.12.0",
+      "download": "https://github.com/ys624mg/komari-plugins/releases/download/resource-alert-1.12.0/resource-alert-1.12.0.zip",
+      "sha256": "03910f47f8995ebf62b27bc40fc2ec31ab34fdc999d8f6b0e6ec11c3197ef9a1"
+    },
+    {
+      "name": {
+        "zh_CN": "独角鲸托管财务日报",
+        "en": "Hosting Finance Daily"
+      },
+      "short": "narwhal-finance",
+      "description": {
+        "zh_CN": "通过 Narwhal Cloud(fuckip.me) 开放 API 拉取托管财务数据：托管实例数、预计月入、累计提现、托管/账户/冻结/可用余额变化、今日入账与扣减汇总、当日交易明细。每日定时通过自定义 Telegram Bot 发送日报，也可开启新交易实时推送；管理页提供可视化看板（余额对比、收支构成、交易流水、客户排行、机器套餐库存、VM 归档、退款统计、日报预览与投递记录）。",
+        "en": "Fetch hosting finance data from the Narwhal Cloud API and send a daily report via a custom Telegram bot, with optional real-time transaction alerts. The admin page provides a visual dashboard: balance comparison, income/deduction breakdown, daily transactions, customer ranking, plan stock, VM archive, refund stats, report preview and delivery log."
+      },
+      "version": "1.11.5",
+      "author": "Komari-User",
+      "komari": ">=0.0.1",
+      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/narwhal-finance-1.11.3",
+      "download": "https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-1.11.5/narwhal-finance-1.11.5.zip",
+      "sha256": "89349b8a9e02f7e1379dad81097885f9f011557cbb17e9e7b2ff34dbc732eebd"
     },
     {
       "name": {
@@ -38,37 +55,20 @@
     },
     {
       "name": {
-        "zh_CN": "独角鲸托管财务日报",
-        "en": "Hosting Finance Daily"
+        "zh_CN": "ACCK 自动签到",
+        "en": "ACCK Auto Check-in"
       },
-      "short": "narwhal-finance",
+      "short": "acck-checkin",
       "description": {
-        "zh_CN": "通过 Narwhal Cloud(fuckip.me) 开放 API 拉取托管财务数据：托管实例数、预计月入、累计提现、托管/账户/冻结/可用余额变化、今日入账与扣减汇总、当日交易明细。每日定时通过自定义 Telegram Bot 发送日报，也可开启新交易实时推送；管理页提供可视化看板（余额对比、收支构成、交易流水、客户排行、机器套餐库存、VM 归档、退款统计、日报预览与投递记录）。",
-        "en": "Fetch hosting finance data from the Narwhal Cloud API and send a daily report via a custom Telegram bot, with optional real-time transaction alerts. The admin page provides a visual dashboard: balance comparison, income/deduction breakdown, daily transactions, customer ranking, plan stock, VM archive, refund stats, report preview and delivery log."
+        "zh_CN": "支持多个 ACCK (acck.io) 账号自动登录并完成每日签到：逐个求解 altcha 工作量证明，用邮箱+密码+2FA(TOTP) 换取 Token，定时批量签到领取 AC 币；签到完成后统一推送一条「批量签到汇总」，不逐账号骚扰。另支持 AC 交易区监控：监控只负责发现新上架并推送——推送范围可选「全部新上架」或「仅命中规则的」，「推送规则」与「自动交易」两套规则各自独立；推送消息附带 TG 内联购买按钮，可开启二次确认防误点。「自动交易」按交易规则列表匹配后自动下单，账号、每轮上限与被墙过滤单独控制。敏感数据保护：密码与 TOTP 密钥不回显，邮箱一律脱敏展示。配置页改动（含开启交易所监控）即时生效，无需重启插件。\n\nv3.9.0：管理页全面重做（分页签 + KPI + 实时进度 + 购买弹窗）；修复「购买失败后无法重试」「签到记录被固定截断为 20 条」「手动签到并发未拦截」等问题；PoW 求解增加超时保护；状态文件改为原子写入并合并落盘；规则条件支持「价格」别名与全角数字。",
+        "en": "Automatically sign in multiple ACCK (acck.io) accounts and check in daily: solves the altcha proof-of-work challenge per account, logs in with email+password+2FA (TOTP) to obtain a token, then calls the daily check-in endpoint. After each batch a single summary notification is sent (no per-account spam). Also monitors the AC exchange: monitoring only discovers new listings and pushes them, with a selectable push scope (all new listings, or rule-matched only). Push rules and trade rules are two independent lists: the push list decides what gets notified, the trade list decides what gets auto-bought (a line marked autoBuy=yes will auto-order). Telegram inline buy buttons are attached to push messages, with an optional two-step confirmation. Passwords and TOTP secrets are never echoed; emails are masked. Config changes (including enabling exchange monitoring) take effect immediately without a plugin restart.\n\nv3.9.0: redesigned admin page (tabs, KPI cards, live progress, buy dialog); fixed retry-after-failed-purchase, history truncation and concurrent manual check-in issues; added a timeout guard for PoW solving; atomic, batched state persistence; rule parser now accepts the 价格 alias and full-width digits."
       },
-      "version": "1.11.3",
+      "version": "3.9.2",
       "author": "Komari-User",
       "komari": ">=0.0.1",
-      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/narwhal-finance-1.11.3",
-      "download": "https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-1.11.3/narwhal-finance-1.11.3.zip",
-      "sha256": "bc7abf489518381461cbc8848de70d03b11cd753386b70c805357790237774f0"
-    },
-    {
-      "name": {
-        "zh_CN": "资源监控报警",
-        "en": "Resource Alert Monitor"
-      },
-      "short": "resource-alert",
-      "description": {
-        "zh_CN": "定时检测所有节点 CPU 使用率、系统负载与连接数，超过阈值时通过 Komari 通知渠道或自定义 Webhook 报警，恢复后发送恢复消息。另支持「IP 被墙检测」：引用 Komari 自带延迟监测任务的 ping 数据，选中的任务持续超时达到设定时长即判定入站 IP 被封锁并通过站点自带通知渠道报警，恢复后自动通知。",
-        "en": "Periodically check CPU usage, system load and connection count of all nodes, alert via Komari notification or custom webhook when thresholds are exceeded, and send recovery messages after recovery. Also supports IP-block detection based on Komari built-in ping task metrics: when a selected latency-monitor task keeps timing out beyond the configured duration, the inbound IP is considered blocked and an alert is sent through the panel's built-in notification channel."
-      },
-      "version": "1.12.0",
-      "author": "Komari-User",
-      "komari": ">=0.0.1",
-      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/resource-alert-1.12.0",
-      "download": "https://github.com/ys624mg/komari-plugins/releases/download/resource-alert-1.12.0/resource-alert-1.12.0.zip",
-      "sha256": "03910f47f8995ebf62b27bc40fc2ec31ab34fdc999d8f6b0e6ec11c3197ef9a1"
+      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/acck-checkin-3.9.0",
+      "download": "https://github.com/ys624mg/komari-plugins/releases/download/acck-checkin-3.9.2/acck-checkin-3.9.2.zip",
+      "sha256": "b78b11ba85f8ca0e74a1c25dd7dcb3856b93a871596ca26241a30be22c0806b2"
     }
   ]
 }
