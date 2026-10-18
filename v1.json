@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-10-18T12:25:46.720Z",
+  "updated_at": "2026-10-18T12:42:41.234Z",
   "plugins": [
     {
       "name": {
@@ -46,12 +46,12 @@
         "zh_CN": "通过 Narwhal Cloud(fuckip.me) 开放 API 拉取托管财务数据：托管实例数、预计月入、累计提现、托管/账户/冻结/可用余额变化、今日入账与扣减汇总、当日交易明细。每日定时通过自定义 Telegram Bot 发送日报，也可开启新交易实时推送；管理页提供可视化看板（余额对比、收支构成、交易流水、客户排行、机器套餐库存、VM 归档、退款统计、日报预览与投递记录）。",
         "en": "Fetch hosting finance data from the Narwhal Cloud API and send a daily report via a custom Telegram bot, with optional real-time transaction alerts. The admin page provides a visual dashboard: balance comparison, income/deduction breakdown, daily transactions, customer ranking, plan stock, VM archive, refund stats, report preview and delivery log."
       },
-      "version": "1.11.1",
+      "version": "1.11.3",
       "author": "Komari-User",
       "komari": ">=0.0.1",
-      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/narwhal-finance-1.11.1",
-      "download": "https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-1.11.1/narwhal-finance-1.11.1.zip",
-      "sha256": "e0b47e31dbc71c2669815894642542b065a42bf1c98cac2a363b94ed9e0345f7"
+      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/narwhal-finance-1.11.3",
+      "download": "https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-1.11.3/narwhal-finance-1.11.3.zip",
+      "sha256": "bc7abf489518381461cbc8848de70d03b11cd753386b70c805357790237774f0"
     },
     {
       "name": {
