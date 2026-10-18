@@ -16,7 +16,7 @@
 | `resource-alert` | 资源监控报警 | 1.12.0 | `03910f47f8995ebf…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/resource-alert-1.12.0/resource-alert-1.12.0.zip) |
 | `narwhal-finance` | 独角鲸托管财务日报 | 1.11.5 | `89349b8a9e02f7e1…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-1.11.5/narwhal-finance-1.11.5.zip) |
 | `month-rotate` | 流量月重置日管理 | 1.5.0 | `2af38c0d177029d2…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/month-rotate-1.5.0/month-rotate-fixed-1.5.0.zip) |
-| `acck-checkin` | ACCK 自动签到 | 3.9.2 | `b78b11ba85f8ca0e…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/acck-checkin-3.9.2/acck-checkin-3.9.2.zip) |
+| `acck-checkin` | ACCK 自动签到 | 3.9.5 | `d2a5988dcb38c559…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/acck-checkin-3.9.5/acck-checkin-3.9.5.zip) |
 
 ## 插件说明
 
@@ -49,11 +49,11 @@
 
 ### ACCK 自动签到 (`acck-checkin`)
 
-- 版本：**3.9.2**
+- 版本：**3.9.5**
 - 作者：Komari-User
 - Komari 要求：`>=0.0.1`
-- 下载：https://github.com/ys624mg/komari-plugins/releases/download/acck-checkin-3.9.2/acck-checkin-3.9.2.zip
-- SHA256：`b78b11ba85f8ca0e74a1c25dd7dcb3856b93a871596ca26241a30be22c0806b2`
+- 下载：https://github.com/ys624mg/komari-plugins/releases/download/acck-checkin-3.9.5/acck-checkin-3.9.5.zip
+- SHA256：`d2a5988dcb38c559eb19f98cadb2a89774b7c993ed0d89ed17700163deb882e5`
 - 说明：支持多个 ACCK (acck.io) 账号自动登录并完成每日签到：逐个求解 altcha 工作量证明，用邮箱+密码+2FA(TOTP) 换取 Token，定时批量签到领取 AC 币；签到完成后统一推送一条「批量签到汇总」，不逐账号骚扰。另支持 AC 交易区监控：监控只负责发现新上架并推送——推送范围可选「全部新上架」或「仅命中规则的」，「推送规则」与「自动交易」两套规则各自独立；推送消息附带 TG 内联购买按钮，可开启二次确认防误点。「自动交易」按交易规则列表匹配后自动下单，账号、每轮上限与被墙过滤单独控制。敏感数据保护：密码与 TOTP 密钥不回显，邮箱一律脱敏展示。配置页改动（含开启交易所监控）即时生效，无需重启插件。
 
 v3.9.0：管理页全面重做（分页签 + KPI + 实时进度 + 购买弹窗）；修复「购买失败后无法重试」「签到记录被固定截断为 20 条」「手动签到并发未拦截」等问题；PoW 求解增加超时保护；状态文件改为原子写入并合并落盘；规则条件支持「价格」别名与全角数字。
