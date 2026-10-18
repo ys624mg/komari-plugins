@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-10-18T12:11:16.548Z",
+  "updated_at": "2026-10-18T12:25:46.720Z",
   "plugins": [
     {
       "name": {
@@ -15,8 +15,8 @@
       "version": "3.9.0",
       "author": "Komari-User",
       "komari": ">=0.0.1",
-      "url": "https://github.com/ys624mg/komari-plugins/tree/main/plugins",
-      "download": "https://raw.githubusercontent.com/ys624mg/komari-plugins/main/plugins/acck-checkin-3.9.0.zip",
+      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/acck-checkin-3.9.0",
+      "download": "https://github.com/ys624mg/komari-plugins/releases/download/acck-checkin-3.9.0/acck-checkin-3.9.0.zip",
       "sha256": "54b19ac0cb34109f9a649285a1b165c231d6545ca673e9f00bc3dd03b3c13b3c"
     },
     {
@@ -32,8 +32,8 @@
       "version": "1.5.0",
       "author": "Komari-User",
       "komari": ">=1.5.0",
-      "url": "https://github.com/ys624mg/komari-plugins/tree/main/plugins",
-      "download": "https://raw.githubusercontent.com/ys624mg/komari-plugins/main/plugins/month-rotate-fixed-1.5.0.zip",
+      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/month-rotate-1.5.0",
+      "download": "https://github.com/ys624mg/komari-plugins/releases/download/month-rotate-1.5.0/month-rotate-fixed-1.5.0.zip",
       "sha256": "2af38c0d177029d2e6d246c789852216f5959d6d1599b036177868d27ceaceae"
     },
     {
@@ -49,8 +49,8 @@
       "version": "1.11.1",
       "author": "Komari-User",
       "komari": ">=0.0.1",
-      "url": "https://github.com/ys624mg/komari-plugins/tree/main/plugins",
-      "download": "https://raw.githubusercontent.com/ys624mg/komari-plugins/main/plugins/narwhal-finance-1.11.1.zip",
+      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/narwhal-finance-1.11.1",
+      "download": "https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-1.11.1/narwhal-finance-1.11.1.zip",
       "sha256": "e0b47e31dbc71c2669815894642542b065a42bf1c98cac2a363b94ed9e0345f7"
     },
     {
@@ -66,8 +66,8 @@
       "version": "1.12.0",
       "author": "Komari-User",
       "komari": ">=0.0.1",
-      "url": "https://github.com/ys624mg/komari-plugins/tree/main/plugins",
-      "download": "https://raw.githubusercontent.com/ys624mg/komari-plugins/main/plugins/resource-alert-1.12.0.zip",
+      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/resource-alert-1.12.0",
+      "download": "https://github.com/ys624mg/komari-plugins/releases/download/resource-alert-1.12.0/resource-alert-1.12.0.zip",
       "sha256": "03910f47f8995ebf62b27bc40fc2ec31ab34fdc999d8f6b0e6ec11c3197ef9a1"
     }
   ]
