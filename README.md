@@ -14,7 +14,7 @@
 | 插件 short | 名称 | 最新版本 | SHA256 | 下载 |
 | --- | --- | --- | --- | --- |
 | `resource-alert` | 资源监控报警 | 1.12.0 | `03910f47f8995ebf…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/resource-alert-1.12.0/resource-alert-1.12.0.zip) |
-| `narwhal-finance` | 独角鲸托管财务日报 | 1.11.5 | `89349b8a9e02f7e1…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-1.11.5/narwhal-finance-1.11.5.zip) |
+| `narwhal-finance` | 独角鲸托管 | 2.2.0 | `5fd2447a7ceedd27…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.2.0/narwhal-finance-2.2.0.zip) |
 | `month-rotate` | 流量月重置日管理 | 1.5.0 | `2af38c0d177029d2…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/month-rotate-1.5.0/month-rotate-fixed-1.5.0.zip) |
 | `acck-checkin` | ACCK 自动签到 | 3.9.5 | `d2a5988dcb38c559…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/acck-checkin-3.9.5/acck-checkin-3.9.5.zip) |
 
@@ -29,14 +29,14 @@
 - SHA256：`03910f47f8995ebf62b27bc40fc2ec31ab34fdc999d8f6b0e6ec11c3197ef9a1`
 - 说明：定时检测所有节点 CPU 使用率、系统负载与连接数，超过阈值时通过 Komari 通知渠道或自定义 Webhook 报警，恢复后发送恢复消息。另支持「IP 被墙检测」：引用 Komari 自带延迟监测任务的 ping 数据，选中的任务持续超时达到设定时长即判定入站 IP 被封锁并通过站点自带通知渠道报警，恢复后自动通知。
 
-### 独角鲸托管财务日报 (`narwhal-finance`)
+### 独角鲸托管 (`narwhal-finance`)
 
-- 版本：**1.11.5**
+- 版本：**2.2.0**
 - 作者：Komari-User
 - Komari 要求：`>=0.0.1`
-- 下载：https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-1.11.5/narwhal-finance-1.11.5.zip
-- SHA256：`89349b8a9e02f7e1379dad81097885f9f011557cbb17e9e7b2ff34dbc732eebd`
-- 说明：通过 Narwhal Cloud(fuckip.me) 开放 API 拉取托管财务数据：托管实例数、预计月入、累计提现、托管/账户/冻结/可用余额变化、今日入账与扣减汇总、当日交易明细。每日定时通过自定义 Telegram Bot 发送日报，也可开启新交易实时推送；管理页提供可视化看板（余额对比、收支构成、交易流水、客户排行、机器套餐库存、VM 归档、退款统计、日报预览与投递记录）。
+- 下载：https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.2.0/narwhal-finance-2.2.0.zip
+- SHA256：`5fd2447a7ceedd273aeb6314e29fcbe002195a6d5b1ee38f8b7fbba022cb78a2`
+- 说明：独角鲸托管（Narwhal Cloud）一体化看板：汇总托管实例、预计月入、累计提现与四类余额变化，提供机器概览、VM 归档、客户排行、退款统计与日报投递记录。支持 Telegram 日报、新交易与工单推送、自动提现，并可在面板内管理套餐、促销码与机器信息。
 
 ### 流量月重置日管理 (`month-rotate`)
 
