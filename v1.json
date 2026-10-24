@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-10-18T14:47:35.174822Z",
+  "updated_at": "2026-10-24T10:31:06.704096Z",
   "plugins": [
     {
       "name": {
@@ -21,20 +21,20 @@
     },
     {
       "name": {
-        "zh_CN": "独角鲸托管财务日报",
-        "en": "Hosting Finance Daily"
+        "zh_CN": "独角鲸托管",
+        "en": "Narwhal Hosting"
       },
       "short": "narwhal-finance",
       "description": {
-        "zh_CN": "通过 Narwhal Cloud(fuckip.me) 开放 API 拉取托管财务数据：托管实例数、预计月入、累计提现、托管/账户/冻结/可用余额变化、今日入账与扣减汇总、当日交易明细。每日定时通过自定义 Telegram Bot 发送日报，也可开启新交易实时推送；管理页提供可视化看板（余额对比、收支构成、交易流水、客户排行、机器套餐库存、VM 归档、退款统计、日报预览与投递记录）。",
-        "en": "Fetch hosting finance data from the Narwhal Cloud API and send a daily report via a custom Telegram bot, with optional real-time transaction alerts. The admin page provides a visual dashboard: balance comparison, income/deduction breakdown, daily transactions, customer ranking, plan stock, VM archive, refund stats, report preview and delivery log."
+        "zh_CN": "独角鲸托管（Narwhal Cloud）一体化看板：汇总托管实例、预计月入、累计提现与四类余额变化，提供机器概览、VM 归档、客户排行、退款统计与日报投递记录。支持 Telegram 日报、新交易与工单推送、自动提现，并可在面板内管理套餐、促销码与机器信息。",
+        "en": "All-in-one Narwhal Cloud hosting dashboard: instances, estimated monthly revenue, withdrawals and balance changes, with machine overview, VM archive, customer ranking, refund stats and report log. Includes Telegram daily reports, transaction and ticket alerts, auto-withdrawal, and in-panel management of plans, promo codes and machine info."
       },
-      "version": "1.11.5",
+      "version": "2.2.0",
       "author": "Komari-User",
       "komari": ">=0.0.1",
-      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/narwhal-finance-1.11.3",
-      "download": "https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-1.11.5/narwhal-finance-1.11.5.zip",
-      "sha256": "89349b8a9e02f7e1379dad81097885f9f011557cbb17e9e7b2ff34dbc732eebd"
+      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/narwhal-finance-2.2.0",
+      "download": "https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.2.0/narwhal-finance-2.2.0.zip",
+      "sha256": "5fd2447a7ceedd273aeb6314e29fcbe002195a6d5b1ee38f8b7fbba022cb78a2"
     },
     {
       "name": {
