@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-10-25T13:04:16.569890Z",
+  "updated_at": "2026-10-26T09:55:13.039343Z",
   "plugins": [
     {
       "name": {
@@ -29,12 +29,12 @@
         "zh_CN": "独角鲸托管（Narwhal Cloud）一体化看板：汇总托管实例、预计月入、累计提现与四类余额变化，提供机器概览、VM 归档、客户排行、退款统计与日报投递记录。支持 Telegram 日报、新交易与工单推送、自动提现，并可在面板内管理套餐、促销码与机器信息。",
         "en": "All-in-one Narwhal Cloud hosting dashboard: instances, estimated monthly revenue, withdrawals and balance changes, with machine overview, VM archive, customer ranking, refund stats and report log. Includes Telegram daily reports, transaction and ticket alerts, auto-withdrawal, and in-panel management of plans, promo codes and machine info."
       },
-      "version": "2.4.2",
+      "version": "2.5.0",
       "author": "Komari-User",
       "komari": ">=0.0.1",
-      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/narwhal-finance-2.4.2",
-      "download": "https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.4.2/narwhal-finance-2.4.2.zip",
-      "sha256": "4e8a9d5e4ed8476bc4b906ea793d26b71da1056022a88699d9ffd3b82387dc18"
+      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/narwhal-finance-2.5.0",
+      "download": "https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.5.0/narwhal-finance-2.5.0.zip",
+      "sha256": "d4eb40d8e8b9c2ca87a77ceb3edcae086d0e26bc47bdf5af8b08976ac79a61a7"
     },
     {
       "name": {
