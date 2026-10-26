@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-10-26T09:55:13.039343Z",
+  "updated_at": "2026-10-26T09:58:00.400305Z",
   "plugins": [
     {
       "name": {
@@ -34,7 +34,7 @@
       "komari": ">=0.0.1",
       "url": "https://github.com/ys624mg/komari-plugins/releases/tag/narwhal-finance-2.5.0",
       "download": "https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.5.0/narwhal-finance-2.5.0.zip",
-      "sha256": "d4eb40d8e8b9c2ca87a77ceb3edcae086d0e26bc47bdf5af8b08976ac79a61a7"
+      "sha256": "c0a26c37a920f451dcdf5fd4a0c7f10950e33e8064b9236199eb2b0ec924f1e2"
     },
     {
       "name": {
