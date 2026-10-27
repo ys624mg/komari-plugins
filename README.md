@@ -14,7 +14,7 @@
 | 插件 short | 名称 | 最新版本 | SHA256 | 下载 |
 | --- | --- | --- | --- | --- |
 | `resource-alert` | 资源监控报警 | 1.12.0 | `03910f47f8995ebf…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/resource-alert-1.12.0/resource-alert-1.12.0.zip) |
-| `narwhal-finance` | 独角鲸托管 | 2.7.1 | `eab912f74d41e3b4…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.7.1/narwhal-finance-2.7.1.zip) |
+| `narwhal-finance` | 独角鲸托管 | 2.7.2 | `5c58424a1695de5d…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.7.2/narwhal-finance-2.7.2.zip) |
 | `month-rotate` | 流量月重置日管理 | 1.5.0 | `2af38c0d177029d2…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/month-rotate-1.5.0/month-rotate-fixed-1.5.0.zip) |
 | `acck-checkin` | ACCK 自动签到 | 3.9.5 | `d2a5988dcb38c559…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/acck-checkin-3.9.5/acck-checkin-3.9.5.zip) |
 
