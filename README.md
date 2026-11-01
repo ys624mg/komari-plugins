@@ -31,12 +31,12 @@
 
 ### 独角鲸托管 (`narwhal-finance`)
 
-- 版本：**2.2.0**
+- 版本：**2.12.2**
 - 作者：Komari-User
 - Komari 要求：`>=0.0.1`
-- 下载：https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.2.0/narwhal-finance-2.2.0.zip
-- SHA256：`b0553ca6f463a54bd86c174ce7c3f4644258dee03fca522693104035f776cbe8`
-- 说明：独角鲸托管（Narwhal Cloud）一体化看板：汇总托管实例、预计月入、累计提现与四类余额变化，提供机器概览、VM 归档、客户排行、退款统计与日报投递记录。支持 Telegram 日报、新交易与工单推送、自动提现，并可在面板内管理套餐、促销码与机器信息。
+- 下载：https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.12.2/narwhal-finance-2.12.2.zip
+- SHA256：`84828a729921096d0e97b9406b9e656d59fdb6e73c5c6379a70c7889ecbb6f8c`
+- 说明：独角鲸托管（Narwhal Cloud）一体化看板：汇总托管实例、预计月入、累计提现与四类余额变化，提供机器概览、VM 归档、客户排行、退款统计、收入明细（按日）与日报投递记录。支持流量进度条、母鸡流量（ACCK）、被墙检测（读面板原生延迟监测任务）。支持 Telegram 日报、新交易与工单推送、自动提现，并可在面板内管理套餐、促销码与机器信息。
 
 ### 流量月重置日管理 (`month-rotate`)
 
