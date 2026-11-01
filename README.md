@@ -14,7 +14,7 @@
 | 插件 short | 名称 | 最新版本 | SHA256 | 下载 |
 | --- | --- | --- | --- | --- |
 | `resource-alert` | 资源监控报警 | 1.12.0 | `03910f47f8995ebf…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/resource-alert-1.12.0/resource-alert-1.12.0.zip) |
-| `narwhal-finance` | 独角鲸托管 | 2.12.3 | `db00478bde966d14…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.12.3/narwhal-finance-2.12.3.zip) |
+| `narwhal-finance` | 独角鲸托管 | 2.13.0 | `34ddafaa6f5c562c…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.13.0/narwhal-finance-2.13.0.zip) |
 | `month-rotate` | 流量月重置日管理 | 1.5.0 | `2af38c0d177029d2…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/month-rotate-1.5.0/month-rotate-fixed-1.5.0.zip) |
 | `acck-checkin` | ACCK 自动签到 | 3.9.5 | `d2a5988dcb38c559…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/acck-checkin-3.9.5/acck-checkin-3.9.5.zip) |
 
@@ -31,12 +31,12 @@
 
 ### 独角鲸托管 (`narwhal-finance`)
 
-- 版本：**2.12.3**
+- 版本：**2.13.0**
 - 作者：Komari-User
 - Komari 要求：`>=0.0.1`
-- 下载：https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.12.3/narwhal-finance-2.12.3.zip
-- SHA256：`db00478bde966d143e3635b09919cd370f9e5c664f499b2df1676118414f10bd`
-- 说明：独角鲸托管（Narwhal Cloud）一体化看板：汇总托管实例、预计月入、累计提现与四类余额变化，提供机器概览、VM 归档、客户排行、退款统计、收入明细（按日）与日报投递记录。支持流量进度条、母鸡流量（ACCK）、被墙检测（读面板原生延迟监测任务）。支持 Telegram 日报、新交易与工单推送、自动提现，并可在面板内管理套餐、促销码与机器信息。
+- 下载：https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.13.0/narwhal-finance-2.13.0.zip
+- SHA256：`34ddafaa6f5c562cae8dd6cd70e70fb5b077af86bc81866077393f6cb96b5e05`
+- 说明：独角鲸托管（Narwhal Cloud）一体化看板：汇总托管实例、预计月入、累计提现与四类余额变化，提供机器概览、VM 归档、客户排行、退款统计、收入明细（按日）与日报投递记录。支持流量进度条、母鸡流量（可直接复用 acck-checkin 的账号，无需重复配置）、被墙检测（读面板原生延迟监测任务）。支持 Telegram 日报、新交易与工单推送、自动提现，并可在面板内管理套餐、促销码与机器信息。
 
 ### 流量月重置日管理 (`month-rotate`)
 
