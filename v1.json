@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-01T05:33:10.293123Z",
+  "updated_at": "2026-11-01T06:18:08.020668Z",
   "plugins": [
     {
       "name": {
@@ -26,15 +26,15 @@
       },
       "short": "narwhal-finance",
       "description": {
-        "zh_CN": "独角鲸托管（Narwhal Cloud）一体化看板：汇总托管实例、预计月入、累计提现与四类余额变化，提供机器概览、VM 归档、客户排行、退款统计与日报投递记录。支持 Telegram 日报、新交易与工单推送、自动提现，并可在面板内管理套餐、促销码与机器信息。",
-        "en": "All-in-one Narwhal Cloud hosting dashboard: instances, estimated monthly revenue, withdrawals and balance changes, with machine overview, VM archive, customer ranking, refund stats and report log. Includes Telegram daily reports, transaction and ticket alerts, auto-withdrawal, and in-panel management of plans, promo codes and machine info."
+        "zh_CN": "独角鲸托管（Narwhal Cloud）一体化看板：汇总托管实例、预计月入、累计提现与四类余额变化，提供机器概览、VM 归档、客户排行、退款统计、收入明细（按日）与日报投递记录。支持流量进度条、母鸡流量（ACCK）、被墙检测（读面板原生延迟监测任务）。支持 Telegram 日报、新交易与工单推送、自动提现，并可在面板内管理套餐、促销码与机器信息。",
+        "en": "All-in-one Narwhal Cloud hosting dashboard: instances, estimated monthly revenue, withdrawals and balance changes, with machine overview, VM archive, customer ranking, refund stats, daily income breakdown and report log. Includes traffic usage bars, host traffic via ACCK, and China-block detection from native Komari ping tasks. Telegram daily reports, transaction and ticket alerts, auto-withdrawal, and in-panel management of plans, promo codes and machine info."
       },
-      "version": "2.12.1",
+      "version": "2.12.2",
       "author": "Komari-User",
       "komari": ">=0.0.1",
-      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/narwhal-finance-2.12.1",
-      "download": "https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.12.1/narwhal-finance-2.12.1.zip",
-      "sha256": "4f2800b80637e256175661eb669105465436c2a685684eee7d06fac74577186d"
+      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/narwhal-finance-2.12.2",
+      "download": "https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.12.2/narwhal-finance-2.12.2.zip",
+      "sha256": "84828a729921096d0e97b9406b9e656d59fdb6e73c5c6379a70c7889ecbb6f8c"
     },
     {
       "name": {
