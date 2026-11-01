@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-01T08:06:01.336848Z",
+  "updated_at": "2026-11-01T08:21:16.825460Z",
   "plugins": [
     {
       "name": {
@@ -29,12 +29,12 @@
         "zh_CN": "独角鲸托管（Narwhal Cloud）一体化看板：汇总托管实例、预计月入、累计提现与四类余额变化，提供机器概览、VM 归档、客户排行、退款统计、收入明细（按日）与日报投递记录。支持流量进度条与可用流量、母鸡流量（优先走 acck-checkin 的 RPC 取 Token，凭据只留一处）、被墙检测（读面板原生延迟监测任务，按地址 / IP / 名称三级匹配到机器，附归属诊断接口）。支持 Telegram 日报、新交易与工单推送、自动提现，并可在面板内管理套餐、促销码与机器信息。",
         "en": "All-in-one Narwhal Cloud hosting dashboard: instances, estimated monthly revenue, withdrawals and balance changes, with machine overview, VM archive, customer ranking, refund stats, daily income breakdown and report log. Includes traffic usage bars, host traffic via ACCK (token obtained over acck-checkin RPC, so credentials live in one place), and China-block detection from native Komari ping tasks. Telegram daily reports, transaction and ticket alerts, auto-withdrawal, and in-panel management of plans, promo codes and machine info."
       },
-      "version": "2.15.0",
+      "version": "2.15.1",
       "author": "Komari-User",
       "komari": ">=0.0.1",
-      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/narwhal-finance-2.15.0",
-      "download": "https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.15.0/narwhal-finance-2.15.0.zip",
-      "sha256": "773080a651df54f0ffbbf692d67c9cee2cc10eeb10a7f0972865d7b3eba260b0"
+      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/narwhal-finance-2.15.1",
+      "download": "https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.15.1/narwhal-finance-2.15.1.zip",
+      "sha256": "5385e0e0996e6fca5f874269e56cb0d03e6d9f7fb8570616df6d1a385851fbff"
     },
     {
       "name": {
