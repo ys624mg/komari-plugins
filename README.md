@@ -14,7 +14,7 @@
 | 插件 short | 名称 | 最新版本 | SHA256 | 下载 |
 | --- | --- | --- | --- | --- |
 | `resource-alert` | 资源监控报警 | 1.12.0 | `03910f47f8995ebf…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/resource-alert-1.12.0/resource-alert-1.12.0.zip) |
-| `narwhal-finance` | 独角鲸托管 | 2.19.2 | `2d5bf47d5bb4d38b…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.19.2/narwhal-finance-2.19.2.zip) |
+| `narwhal-finance` | 独角鲸托管 | 2.19.3 | `e1e26bfda1c3064c…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.19.3/narwhal-finance-2.19.3.zip) |
 | `month-rotate` | 流量月重置日管理 | 1.5.0 | `2af38c0d177029d2…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/month-rotate-1.5.0/month-rotate-fixed-1.5.0.zip) |
 | `acck-checkin` | ACCK 自动签到 | 3.9.5 | `d2a5988dcb38c559…` | [下载](https://github.com/ys624mg/komari-plugins/releases/download/acck-checkin-3.9.5/acck-checkin-3.9.5.zip) |
 
@@ -31,12 +31,12 @@
 
 ### 独角鲸托管 (`narwhal-finance`)
 
-- 版本：**2.19.2**
+- 版本：**2.19.3**
 - 作者：Komari-User
 - Komari 要求：`>=0.0.1`
-- 下载：https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.19.2/narwhal-finance-2.19.2.zip
-- SHA256：`2d5bf47d5bb4d38b1bcc1ff88d40c396179cb74f192edbc1c63249d0af178d7e`
-- 说明：独角鲸托管（Narwhal Cloud）一体化看板：汇总托管实例、预计月入、累计提现与四类余额变化，提供机器概览、VM 归档、客户排行、退款统计（彻底剔除无法匹配到用户的记录）、收入明细（按日，含托管收入 / 续费 / 扣减的分类笔数）与日报投递记录。支持流量进度条与可用流量（不限流量显示 ∞）、母鸡流量与下次流量重置时间（母鸡不限流量显示「无限流量」；优先走 acck-checkin 的 RPC 取 Token，凭据只留一处；多个 ACCK 账号可全部启用、按 IP 合并服务器流量）、机器类型标（container / podman 等紫色标记）、被墙检测（读面板原生延迟监测任务，按「机器所在节点」判定正常 / TCP阻断 / 被墙，任务目标填域名也能用）、节点设置下发（多选机器一次改可用镜像 / 默认镜像、端口转发数量、流量统计方式、节点带宽修正，走节点本地 8792 面板）、以及 RFW 防火墙下发（多选机器后先清空节点规则再逐条写入，RFW 由 narwhal-agent 在节点本地拉起）。支持 Telegram 日报、新交易与工单推送、自动提现，并可在面板内管理套餐、促销码与机器信息。
+- 下载：https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.19.3/narwhal-finance-2.19.3.zip
+- SHA256：`e1e26bfda1c3064c39d005014b27aa1e9e97d815bf74b649afbfacc3b302c0a3`
+- 说明：独角鲸托管（Narwhal Cloud）一体化看板：汇总托管实例、预计月入、累计提现与四类余额变化，提供机器概览、VM 归档、客户排行、退款统计（彻底剔除无法匹配到用户的记录）、收入明细（按日，含托管收入 / 续费 / 扣减的分类笔数）与日报投递记录。支持流量进度条与可用流量（不限流量显示 ∞）、母鸡流量与下次流量重置时间（母鸡不限流量显示 —，附只读诊断接口；优先走 acck-checkin 的 RPC 取 Token，凭据只留一处；多个 ACCK 账号可全部启用、按 IP 合并服务器流量）、机器类型标（container / podman 等紫色标记）、被墙检测（读面板原生延迟监测任务，按「机器所在节点」判定正常 / TCP阻断 / 被墙，任务目标填域名也能用）、节点设置下发（多选机器一次改可用镜像 / 默认镜像、端口转发数量、流量统计方式、节点带宽修正，走节点本地 8792 面板）、以及 RFW 防火墙下发（多选机器后先清空节点规则再逐条写入，RFW 由 narwhal-agent 在节点本地拉起）。支持 Telegram 日报、新交易与工单推送、自动提现，并可在面板内管理套餐、促销码与机器信息。
 
 ### 流量月重置日管理 (`month-rotate`)
 
