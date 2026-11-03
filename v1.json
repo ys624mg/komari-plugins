@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-03T15:30:26.143436Z",
+  "updated_at": "2026-11-03T16:06:16.756610Z",
   "plugins": [
     {
       "name": {
@@ -29,12 +29,12 @@
         "zh_CN": "独角鲸托管（Narwhal Cloud）一体化看板：汇总托管实例、预计月入、累计提现与四类余额变化，提供机器概览、VM 归档、客户排行、退款统计（彻底剔除无法匹配到用户的记录）、收入明细（按日，含托管收入 / 续费 / 扣减的分类笔数）与日报投递记录。支持流量进度条与可用流量（不限流量显示 ∞）、母鸡流量与下次流量重置时间（母鸡不限流量显示 —，附只读诊断接口；优先走 acck-checkin 的 RPC 取 Token，凭据只留一处；多个 ACCK 账号可全部启用、按 IP 合并服务器流量）、机器类型标（container / podman 等紫色标记）、被墙检测（读面板原生延迟监测任务，按「机器所在节点」判定正常 / TCP阻断 / 被墙，任务目标填域名也能用）、节点设置下发（多选机器一次改可用镜像 / 默认镜像、端口转发数量、流量统计方式、节点带宽修正，走节点本地 8792 面板）、以及 RFW 防火墙下发（多选机器后先清空节点规则再逐条写入，RFW 由 narwhal-agent 在节点本地拉起）。支持 Telegram 日报、新交易与工单推送、自动提现，并可在面板内管理套餐、促销码与机器信息。",
         "en": "All-in-one Narwhal Cloud hosting dashboard: instances, estimated monthly revenue, withdrawals and balance changes, with machine overview, VM archive, customer ranking, refund stats, daily income breakdown and report log. Includes traffic usage bars, host traffic and next traffic reset via ACCK (token obtained over acck-checkin RPC, so credentials live in one place), machine kind badges, China-block detection from native Komari ping tasks (judged per node, with a separate TCP-blocked state), node settings push (available/default images, port-forward count, traffic reset mode, bandwidth correction) over the local runman-agent panel, and RFW firewall push (clear then rewrite node rules; RFW is launched locally by narwhal-agent). Telegram daily reports, transaction and ticket alerts, auto-withdrawal, and in-panel management of plans, promo codes and machine info."
       },
-      "version": "2.19.1",
+      "version": "2.19.2",
       "author": "Komari-User",
       "komari": ">=0.0.1",
-      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/narwhal-finance-2.19.1",
-      "download": "https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.19.1/narwhal-finance-2.19.1.zip",
-      "sha256": "cd0f31b7817010de89ea16e0bf3886cf082b8fed7d5dcaad1b40f8cc92fcfcf4"
+      "url": "https://github.com/ys624mg/komari-plugins/releases/tag/narwhal-finance-2.19.2",
+      "download": "https://github.com/ys624mg/komari-plugins/releases/download/narwhal-finance-2.19.2/narwhal-finance-2.19.2.zip",
+      "sha256": "2d5bf47d5bb4d38b1bcc1ff88d40c396179cb74f192edbc1c63249d0af178d7e"
     },
     {
       "name": {
