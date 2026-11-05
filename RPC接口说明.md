@@ -349,7 +349,7 @@ POST /narwhal-finance/open/api        {"action":"notify.buyer","vm":"...","subje
 
 | 版本 | RPC 相关变更 |
 |---|---|
-| 2.19.12 | **无变更**。本版只改被墙检测内部：新增数据源诊断（ok / empty / fail 三态）与 `public:getPingRecords` 回退，RPC 方法名、参数、返回字段都没动 |
+| 2.19.12 | **无变更**。本版只改被墙检测内部：新增数据源诊断（ok / empty / fail 三态）、tags 解析加固、任务勾选诊断与 `public:getPingRecords` 回退，RPC 方法名、参数、返回字段都没动 |
 | 2.19.11 | **无变更**。本版改的是页面交互（流水筛选按钮、收入明细默认天数）与机器类型标归一化，不涉及对外 RPC 的方法名、参数或返回字段 |
 | 2.19.10 | **无变更**。新增 HTTP 路由 `POST /narwhal-finance/alert-dismiss`（告警手动关闭） |
 
