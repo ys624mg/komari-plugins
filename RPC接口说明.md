@@ -1,6 +1,6 @@
 # 独角鲸托管 · RPC 对外接口说明
 
-适用版本：**2.19.17**　核对日期：2026-11-08　插件 short：`narwhal-finance`
+适用版本：**2.19.18**　核对日期：2026-11-08　插件 short：`narwhal-finance`
 
 这份文档描述本插件向**其它 Komari 插件**开放的全部 RPC 方法（通过 `server.call` 调用），以及与之共用同一套 action 的 HTTP 通道。
 
@@ -68,7 +68,7 @@ Komari 的 RPC handler 是**同步调用**的，返回 Promise 不会被等待�
 无参数。
 
 ```json
-{ "ok": true, "action": "ping", "version": "2.19.17", "time": 1762300000, "serverTime": "2026-11-05T10:00:00.000Z" }
+{ "ok": true, "action": "ping", "version": "2.19.18", "time": 1762300000, "serverTime": "2026-11-05T10:00:00.000Z" }
 ```
 
 ---
@@ -187,7 +187,7 @@ Komari 的 RPC handler 是**同步调用**的，返回 Promise 不会被等待�
 {
   "ok": true, "action": "stats.summary",
   "summary": {
-    "version": "2.19.17",
+    "version": "2.19.18",
     "generatedAt": "2026-11-05T10:00:00.000Z",
     "instanceCount": 42,
     "estMonthly": 1256.4,
@@ -349,6 +349,7 @@ POST /narwhal-finance/open/api        {"action":"notify.buyer","vm":"...","subje
 
 | 版本 | RPC 相关变更 |
 |---|---|
+| 2.19.18 | **行为修正，契约不变**。`vm.list` 带 `includeArchived=true` 时不再把在线实例重复列两遍（归档里同时存着在线 VM，以前每台会返回两条、total 翻倍）；其余方法名 / 参数 / 字段名都没动 |
 | 2.19.17 | **无变更**。本版是主动审计：收入明细增量水位不再被同批更新的交易抬高（同轮成交多笔时较早那笔会被漏计）、今日交易与累计提现的翻页改用 pageIsLast（平台把 page_size 压到 60，旧判据只翻第一页）、黑名单越界页不再显示「黑名单为空」；RPC 方法名、参数、返回字段都没动 |
 | 2.19.16 | **无变更**。本版是主动审计：容器类接口的上游 5xx 不再透传成 502（改为 422，避免面板网关替换响应体）、toast 溢出清理连节点一起删、错误文案统一走 errMsg；RPC 方法名、参数、返回字段都没动 |
 | 2.19.15 | **无变更**。本版只改 VM 归档的刷新链路：交易推送不再用归档旧快照覆盖到期日、局部同步不再清空套餐名、退款标记 1 小时自愈、`lastSeenAt` 只由扫描推进；RPC 方法名、参数、返回字段都没动 |
