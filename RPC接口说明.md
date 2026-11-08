@@ -1,6 +1,6 @@
 # 独角鲸托管 · RPC 对外接口说明
 
-适用版本：**2.19.20**　核对日期：2026-11-08　插件 short：`narwhal-finance`
+适用版本：**2.19.21**　核对日期：2026-11-08　插件 short：`narwhal-finance`
 
 这份文档描述本插件向**其它 Komari 插件**开放的全部 RPC 方法（通过 `server.call` 调用），以及与之共用同一套 action 的 HTTP 通道。
 
@@ -68,7 +68,7 @@ Komari 的 RPC handler 是**同步调用**的，返回 Promise 不会被等待�
 无参数。
 
 ```json
-{ "ok": true, "action": "ping", "version": "2.19.20", "time": 1762300000, "serverTime": "2026-11-05T10:00:00.000Z" }
+{ "ok": true, "action": "ping", "version": "2.19.21", "time": 1762300000, "serverTime": "2026-11-05T10:00:00.000Z" }
 ```
 
 ---
@@ -187,7 +187,7 @@ Komari 的 RPC handler 是**同步调用**的，返回 Promise 不会被等待�
 {
   "ok": true, "action": "stats.summary",
   "summary": {
-    "version": "2.19.20",
+    "version": "2.19.21",
     "generatedAt": "2026-11-05T10:00:00.000Z",
     "instanceCount": 42,
     "estMonthly": 1256.4,
@@ -357,6 +357,7 @@ POST /narwhal-finance/open/api        {"action":"notify.buyer","vm":"...","subje
 
 | 版本 | RPC 相关变更 |
 |---|---|
+| 2.19.21 | **无变更**。本版只改管理页与日报里的提现口径：`提现失败 / 已撤销` 不再计入「今日提现」与收入明细的「提现」列（此前会算进去，导致「累计提现」没动而「今日提现」虚高），也不记成扣减。对外接口不返回提现金额，方法名 / 参数 / 字段名都没动 |
 | 2.19.20 | **行为修正，契约不变**。`stats.summary` 的 `expiringIn7Days` 不再包含已过期实例（与 `vm.list` 的 `expiringDays` 同口径，此前把已过期但还没从 VM 列表消失的实例也算进「7 天内到期」）；`stats.summary` 的 `instanceCount` 在平台明确返回 0 台时就是 `0`（此前会回落到母鸡台数）；管理页「同步数据」提示里的退款笔数改用与退款统计页相同的口径（不再把只有 user_id、本地查不到邮箱/用户名的记录算进去）。方法名 / 参数 / 字段名都没动 |
 | 2.19.19 | **行为修正，契约不变**。`vm.list` / `vm.lookup` 的 `daysLeft` 对「已过期但不到 24 小时」的实例从 `0` 改为 `-1`（此前 `Math.ceil` 得到 `-0`，而 `-0 < 0` 为假，`includeExpired=false` 拦不住它，`expiringDays` 会把刚过期的实例列成「即将到期」）；被墙检测结果里的 IPv6 地址改为原始写法（此前被当成带端口切掉最后一组，或展开成十进制 8 组）。方法名 / 参数 / 字段名都没动 |
 | 2.19.18 | **行为修正，契约不变**。`vm.list` 带 `includeArchived=true` 时不再把在线实例重复列两遍（归档里同时存着在线 VM，以前每台会返回两条、total 翻倍）；其余方法名 / 参数 / 字段名都没动 |
